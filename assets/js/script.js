@@ -28,30 +28,8 @@ const obs = new IntersectionObserver(
 );
 obs.observe(headerEl);
 
-// const sectionHeroEl = document.querySelector(".test");
-// const test = document.getElementById("test");
-
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     if (ent.isIntersecting === false) {
-//       document.querySelector(".main-header").classList.add("scroll-header");
-//       test.classList.add("margin-top");
-//     } else {
-//       document.querySelector(".main-header").classList.remove("scroll-header");
-//       test.classList.remove("margin-top");
-//     }
-//   },
-//   {
-//     root: null,
-//     threshold: 0,
-//   }
-// );
-// obs.observe(sectionHeroEl);
-
 /*==================== SHOW/HIDE MENU ====================*/
 const navMenu = document.getElementById("nav-menu");
-// const navToggle = document.getElementById("main-nav-toggle");
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -70,7 +48,6 @@ navLink.forEach((n) => {
   });
 });
 
-// ACTIVE LINK
 navLink.forEach((button) => {
   button.addEventListener("click", function () {
     navLink.forEach((btn) => btn.classList.remove("main-nav-link-active"));
