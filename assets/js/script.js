@@ -82,6 +82,5 @@ function popup() {
     msg.value !== ""
   ) {
     okMessage.style.display = "block";
-    console.log("ok");
   }
 }
